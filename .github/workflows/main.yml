@@ -20,7 +20,7 @@ jobs:
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.x'
+        channel: 'stable'
         cache: true
 
     - name: Install dependencies
@@ -30,4 +30,4 @@ jobs:
 
     - name: Build APK with Flet
       run: |
-        flet build apk
+        flet build apk --yes
