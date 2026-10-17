@@ -3,6 +3,7 @@ name: Build Flet APK
 on:
   push:
     branches: [ main, master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -28,6 +29,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install flet
 
-    - name: Build APK with Flet
+    - name: Build APK
       run: |
         flet build apk --yes
+
+    - name: Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Grimorio-v2.0-APK
+        path: build/apk/*.apk
