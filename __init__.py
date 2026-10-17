@@ -1,27 +1,15 @@
-"""Pacote de componentes visuais do Grimório Mobile."""
+"""Pacote de abas do Grimório Mobile."""
 
-from components.common_ui import (
-    criar_card_nobre,
-    criar_cabecalho_reino,
-    abrir_modal_configuracoes,
-    abrir_modal_influencia_lunar,
-    abrir_modal_oraculo_runas,
-    criar_botao_primario,
-    mostrar_notificacao
-)
-from components.mascote_vector import (
-    criar_mascote_vetorial,
-    criar_card_mascote_interativo
-)
+from tabs.tab_trono import criar_aba_trono
+from tabs.tab_quests import criar_aba_quests
+from tabs.tab_cofre import criar_aba_cofre
+from tabs.tab_forja import criar_aba_forja
+from tabs.tab_foco import criar_aba_foco
 
 __all__ = [
-    "criar_card_nobre",
-    "criar_cabecalho_reino",
-    "abrir_modal_configuracoes",
-    "abrir_modal_influencia_lunar",
-    "abrir_modal_oraculo_runas",
-    "criar_botao_primario",
-    "mostrar_notificacao",
-    "criar_mascote_vetorial",
-    "criar_card_mascote_interativo"
+    "criar_aba_trono",
+    "criar_aba_quests",
+    "criar_aba_cofre",
+    "criar_aba_forja",
+    "criar_aba_foco"
 ]
