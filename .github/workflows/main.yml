@@ -18,11 +18,11 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
+    - name: Install Java (Android requirement)
+      uses: actions/setup-java@v4
       with:
-        channel: 'stable'
-        cache: true
+        distribution: 'temurin'
+        java-version: '17'
 
     - name: Install dependencies
       run: |
