@@ -1,4 +1,6 @@
-"""
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.resolve()))"""
 Grimório Mobile - Aplicativo Dark Fantasy & Gestão do Reino (Edição Android)
 Arquitetura Síncrona, Layout Mobile Portrait Responsivo e Otimizado para Flet Build APK.
 """
